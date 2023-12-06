@@ -1,4 +1,4 @@
-;from pyrogram import Client as app, filters
+from pyrogram import Client as app, filters
 from pyrogram.types import InlineKeyboardButton as btn, InlineKeyboardMarkup as mk
 import time
 import requests
