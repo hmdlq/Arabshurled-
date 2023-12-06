@@ -28,7 +28,7 @@ async def sm(app, msg):
         coin_msg = str(db.get("coin_msg"))
         code = random.randint(100000, 999999)
         verified = False
-        ask1 = await app.ask(user_id, f'•︙ارسل الان كود التحقق هذا للتاكد من انك لست روبوت : `{code}` ', filters=filters.user(user_id))
+        ask1 = await app.ask(user_id, f'•︙ارسل الان كود التحقق هذا للتاكد من انك لست روبوت : {code} ', filters=filters.user(user_id))
         while not verified:
             try:
                 user_code = int(ask1.text)
